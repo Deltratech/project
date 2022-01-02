@@ -1,0 +1,281 @@
+<html>
+<head>
+    
+<script>
+
+function myFunction() {
+document.getElementById("myDropdown")
+    .classList.toggle("show");
+}
+
+window.onclick = function(event) {
+if(!event.target.matches('.dropbtn')){
+
+var dropdowns = document
+.getElementsByClassName
+("dropdown-content");
+
+var i;
+for(i=0; i < dropdowns.length; i++) {
+var openDropdown = dropdowns[i];
+
+if (openDropdown.classList.contains
+('show')) {
+
+openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+</script>
+    
+</head>
+<style type="text/css" media="all" src="style.css">
+
+.dropbtn {
+    background-color: #fff;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #3a7bd5;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px
+    rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover
+{background-color: #f1f1f1}
+
+.show {display:block;}
+
+
+margin: 25px 25 px;
+padding: 0px;
+box-sizing: border-box;
+body {
+    font-family: "Lato", sans-serif;
+}
+.pricing-table {
+    background: #f8f8f8;
+    padding: 40px 0px;
+}
+.pricing-table .details {
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+.pricing-table .details h2 {
+    font-size: 30px;
+    margin-bot tom: 10px;
+}
+.pricing-table .details p {
+    font-size: 15px;
+}
+.pricing-table.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    gap: 20px 0px;
+    padding: 20px;
+}
+.pricing-table .grid .box {
+    width: 250px;
+    border: 1px solid #eee;
+    text-align: center;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px 5px rgba(0,0,0,0.05);
+}
+.pricing-table .grid .box .title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #555;
+}
+.pricing-table .grid .box .features > * {
+    color: #555;
+    padding: 8px 0px;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+.pricing-table .grid .box .button button {
+    width: 100%;
+    margin: 25px 0px 0px;
+    padding: 10px;
+    background:linear-gradient(to bottom,
+    #3a7bd5, #326073);
+    color: #fff;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+.pricing-table .grid .box.professional {
+    transform:scale (1.2);
+    background:linear-gradient(to bottom, #3a7bd5, #326073);
+}
+.pricing-table .grid .box.professional .price {
+    color: #fff;
+    font-size: 15px;
+}
+.pricing-table .grid .box.professional .title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #555;
+}
+.pricing-table .grid .box .button button {
+    width: 100%;
+    margin: 25px 0px 0px;
+    padding: 10px;
+    background:linear-gradient(to bottom,
+    #3a7bd5, #326073);
+    color: #fff;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+.pricing-table .grid .box.professional {
+    transform:scale (1.2);
+    background:linear-gradient(to bottom, #3a7bd5, #326073);
+}
+.pricing-table .grid .box.professional .price {
+    color: #fff;
+    font-weight:600;
+}-weight:600;
+}
+.pricing-table .grid .box.professional .title {
+    color: #fff;
+    font-weight: 600;
+}
+.pricing-table .grid .box.professional .features > * {
+color: #fff;
+padding:8px 0px;
+border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+.pricing-table .grid .box.professional .button button {
+width: 100%;
+margin:25px 0px 0px;
+padding:10px;
+background:linear-gradient(to bottom, #fff, #3a7db5);
+color: #326073;
+border-radius:5px;
+outline: none;
+border: black;
+font-weight:600;
+cursor: pointer;
+}
+
+@media (max-width:804px) {
+  .pricing-table .grid{
+    gap:20px;
+  }
+  .pricing-table .grid professional{
+    transform:scale(1.0);
+  }
+} 
+
+</style>
+
+<body>
+
+<div class="dropdown">
+<button onclick="myFunction()"
+ class="dropbtn">More</button>
+
+  <div id="myDropdown"
+  class="dropdown-content">
+    <a href="www.deltratech.my.id/home">Home</a>
+    <a href="#store">store</a>
+    <a href="#contact">Project</a>
+  </div>
+
+</div>
+
+    <center>
+    <div class="pricing-table ">
+        <div class="details">
+            <h2>The current project</h2>
+            <p>
+                the other project will be worked on after the first project are done.
+            </p>
+        </div>
+        <div class="grid">
+            <div class="box professional">
+                <div class="title">
+                    Pressure fed Rocket
+                </div>
+                <div class="price">
+                    <b>(engine in development)</b>
+                </div>
+                <div class="features">
+                    <div>
+                        this project is currently on testing the pressure flow with water on the engine.
+                    </div>
+                    <div>
+                        current estimation of the final product in early month of 2022.
+                    </div>
+                    <div>
+                        the goal is to reach enough efficiency for the water rocket, and can be applied with the real fuel and oxidizer.
+                    </div>
+                </div>
+                <div class="button"><a href="https://youtube.com/channel/UCbE9LbK0AU0eLlqpsXkUqLw"><button>Learn more</button></a>
+                </div>
+            </div>
+             <div class="box basic">
+                <div class="title">
+                    App, Games, web builder,& cloud storage
+                </div>
+                <div class="price">
+                    <b>(Still on planned)</b>
+                </div>
+                <div class="features">
+                    <div>
+                    this project is about app/game, website development and cloud storage for commercial service.
+                    </div>
+                    <div>
+                    the services will be available after project is passing the criteria for commercial bussiness
+                    </div>
+                    <div>
+                    Cloud storage will mainly served as app/game/website Storage.
+                    </div>
+                </div>
+                <div class="button">
+                    <button>soon</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </center>
+</body>
+</html>
